@@ -69,6 +69,5 @@ def winner(board)
   if won?(board) == true
     return board[win_combination[1]]
   else
-    return nil
   end
 end
