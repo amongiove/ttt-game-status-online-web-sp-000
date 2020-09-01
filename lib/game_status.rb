@@ -30,8 +30,12 @@ def won?(board)
   end
 
   def full?(board)
+    Board.each do |index|
+    if board[index].nil? || board[index] == " "
        return false
     else
       return true
     end
   end
+end
+  
