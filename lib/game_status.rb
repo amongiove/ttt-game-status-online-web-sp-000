@@ -59,7 +59,20 @@ end
 
 def winner(board)
   if won?(board) == true
-    return board[win_combination[1]]
-  else
+    board.each do |index|
+
+    X_count = 0
+    O_count = 0
+
+    if board.detect{|index| index."X"}
+      X_conut += 1
+    elsif board.detect{|index| index."O"}
+      O_count += 1
+    end
   end
+    if X_count > O_count 
+      return "X"
+    elsif O_count > X_count
+      return "O"
+    end
 end
