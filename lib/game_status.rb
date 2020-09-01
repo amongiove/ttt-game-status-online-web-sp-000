@@ -59,10 +59,11 @@ end
 
 def winner(board)
   if won?(board) == true
-    board.each do |index|
 
     xcount = 0
     ocount = 0
+
+    board.each do |index|
 
     if board.detect{|index| index == "X"}
       xcount += 1
