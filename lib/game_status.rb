@@ -21,10 +21,8 @@ def won?(board)
 
     if board.any?{|index| index == "X" || index == "O"}
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        won?(board) == true
         return win_combination
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        won?(board) == true
         return win_combination
       elsif board.all?{|index| index == "X" || index == "O"}
         return false
