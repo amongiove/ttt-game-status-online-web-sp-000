@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
 
 def won(board)
   for each win_combination in
-   WIN_COMBINATIONS
+   WIN_COMBINATIONS do
    
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
