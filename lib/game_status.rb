@@ -74,5 +74,5 @@ def winner(board)
       elsif ocount > xcount
         return "O"
       end
-    end
-  
+  end
+end
