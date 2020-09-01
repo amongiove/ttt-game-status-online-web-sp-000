@@ -30,7 +30,7 @@ def won?(board)
     elsif board.all?{|index| index == "X" || index == "O"}
       return false  
     else
-      return false
+     false
     end
   end
 end
