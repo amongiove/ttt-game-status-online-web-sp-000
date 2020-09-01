@@ -65,6 +65,7 @@ def winner(board)
     ocount = 0
 
     if board.select{|index| index == "X"}
+      puts board.select{|index| index == "X"}
       xcount += 1
     elsif board.select{|index| index == "O"}
       ocount += 1
