@@ -27,6 +27,10 @@ def won?(board)
         puts "won on O"
         return win_combination
       elsif board.all?{|index| index == "X" || index == "O"}
+        puts "positions"
+        puts position_1
+        puts position_2
+        puts position_3
         puts "board full"
         return false
       end
