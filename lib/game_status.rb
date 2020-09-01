@@ -61,18 +61,18 @@ def winner(board)
   if won?(board) == true
     board.each do |index|
 
-    X_count = 0
-    O_count = 0
+    Xcount = 0
+    Ocount = 0
 
     if board.detect{|index| index."X"}
-      X_count += 1
+      Xcount += 1
     elsif board.detect{|index| index."O"}
-      O_count += 1
+      Ocount += 1
     end
   end
-    if X_count > O_count
+    if Xcount > Ocount
       return "X"
-    elsif O_count > X_count
+    elsif Ocount > Xcount
       return "O"
     end
 end
