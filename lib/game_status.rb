@@ -26,6 +26,7 @@ def won?(board)
       elsif position_1 == " " && position_2 == " " && position_3 == " "
         return false
       elsif position_1 == nil && position_2 == nil && position_3 == nil
+        return false
       else
         false
       end
