@@ -50,6 +50,7 @@ def draw?(board)
 end
 
 def over?(board)
+  puts won?(board) == true
   if won?(board) == true or draw?(board) == true or full?(board) == true
     return true
   else
