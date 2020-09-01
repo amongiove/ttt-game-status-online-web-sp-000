@@ -23,6 +23,9 @@ def won?(board)
         return win_combination
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
         return win_combination
+      elsif position_1 == " " && position_2 == " " && position_3 == " "
+        return false
+      elsif position_1 == nil && position_2 == nil && position_3 == nil
       else
         false
       end
@@ -30,7 +33,6 @@ def won?(board)
   end
 
   def full?(board)
-    if all_board[index]== nil! ||all_board[index] == " "
        return false
     else
       return true
