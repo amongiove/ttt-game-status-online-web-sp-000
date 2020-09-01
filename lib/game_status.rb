@@ -26,8 +26,6 @@ def won?(board)
         return win_combination
       elsif board.all?{|index| index == "X" || index == "O"}
         return false
-      else
-        false
       end
     else
      return false
