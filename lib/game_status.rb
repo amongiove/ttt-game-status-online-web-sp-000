@@ -21,9 +21,9 @@ def won?(board)
 
     if board.any?{|index| index == "X" || index == "O"}
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return true
+        return win_combination
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        return true
+        return win_combination
       elsif board.all?{|index| index == "X" || index == "O"}
         return false
       end
@@ -47,6 +47,8 @@ def draw?(board)
   puts won?(board)
   puts "full"
   puts full?(board)
+
+  puts won?(board) == false
   if won?(board) == false && full?(board) == true
     return true
   else
