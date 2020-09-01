@@ -59,7 +59,7 @@ end
 
 def winner(board)
   puts won?(board)
-  if won?(board) == true
+  if won?(board) != false
 
     xcount = 0
     ocount = 0
