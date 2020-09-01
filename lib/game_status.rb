@@ -71,7 +71,8 @@ def winner(board)
         ocount += 1
       end
     end
-
+    puts xcount
+    puts ocount
     if xcount > ocount
       return "X"
     elsif ocount > xcount
