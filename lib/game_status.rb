@@ -45,11 +45,10 @@ def full?(board)
 end
 
 def draw?(board)
-  puts "won \n"
-  puts won?(board)
-  puts "full"
+  puts "won: " + won?(board)
+  puts "full: " + full?(board)
   puts full?(board)
-  puts board
+  puts "board: " + board
   if won?(board) == false && full?(board) == true
     return true
   else
