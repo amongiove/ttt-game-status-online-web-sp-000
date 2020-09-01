@@ -70,7 +70,7 @@ def winner(board)
       O_count += 1
     end
   end
-    if X_count > O_count 
+    if X_count > O_count
       return "X"
     elsif O_count > X_count
       return "O"
