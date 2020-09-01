@@ -30,5 +30,10 @@ def won?(board)
   end
 
 def full?(board)
-  board.all?{|index| index != nil || index != " " || index != ""}
+  if board.all?{|index| index != nil || index != " " || index != ""}
+    return true
+  elsif board.any?{|index| index != nil || index != " " || index != ""}
+    return false
+  else return false
+  end
 end
