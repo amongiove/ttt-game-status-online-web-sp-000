@@ -56,12 +56,3 @@ def over(board)
     return false
   end
 end
-
-
-def winner(board)
-  if win? == true
-    return #character of winner
-  else
-    return nil
-  end
-end
