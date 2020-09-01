@@ -27,13 +27,10 @@ def won?(board)
       else
         false
       end
-    elsif board.all?{|index| index != nil || index != " " || index != ""}
-      return false
     else
       return false
     end
   end
-end
 
 def full?(board)
   if board.all?{|index| index != nil || index != " " || index != ""}
