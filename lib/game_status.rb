@@ -63,7 +63,7 @@ def over?(board)
 end
 
 def winner?(board)
-  if win? == true
+  if won? == true
     return #character of winner
   else
     return nil
