@@ -67,10 +67,6 @@ def winner(board)
     xcount += board.select{|index| index == "X"}.length()
     ocount += board.select{|index| index == "O"}.length()
 
-    puts xcount
-    puts ocount
-
-
     if xcount > ocount
       return "X"
     elsif ocount > xcount
