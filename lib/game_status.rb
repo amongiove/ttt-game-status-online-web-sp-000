@@ -70,7 +70,6 @@ def winner(board)
     puts xcount
     puts ocount
 
-    end
 
     if xcount > ocount
       return "X"
