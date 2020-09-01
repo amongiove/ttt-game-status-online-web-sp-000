@@ -69,10 +69,11 @@ def winner(board)
         xcount += 1
       elsif board.detect{|index| index == "O"}
         ocount += 1
-      end
     puts xcount
     puts ocount
-  end
+      end
+    end
+  
     if xcount > ocount
       return "X"
     elsif ocount > xcount
