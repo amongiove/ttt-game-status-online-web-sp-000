@@ -66,10 +66,8 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == true && position_1 == "X"
-    return "x"
-  elsif won?(board) == true && position_1 == "O"
-    return "O"
+  if won?(board) == true
+    return board[win_combination[1]]
   else
     return nil
   end
