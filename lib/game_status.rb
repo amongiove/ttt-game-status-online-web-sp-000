@@ -33,9 +33,9 @@ def won?(board)
   end
 
 def full?(board)
-  if board.all?{|index| index != nil || index != " " || index != ""}
+  if board.all?{|index| index == "X" or index == "O"}
     return true
-  elsif board.any?{|index| index != nil || index != " " || index != ""}
+  elsif board.any?{|index| index == "X" or index == "O"}
     return false
   else return false
   end
@@ -48,4 +48,20 @@ def draw?(board)
     return false
   end
 end
-  
+
+def over(board) 
+  if won?(board) == true || draw?(board) == true || full?(board) == true
+    return true
+  else
+    return false
+  end
+end
+
+
+def winner(board)
+  if win? == true
+    return #character of winner 
+  else
+    return nil
+  end
+end
