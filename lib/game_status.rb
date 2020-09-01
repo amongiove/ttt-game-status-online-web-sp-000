@@ -32,8 +32,7 @@ def won?(board)
 def full?(board)
   if all_board[index]== nil! ||all_board[index] == " "
      return false
-  else 
+  else
     return ture
   end
 end
-
