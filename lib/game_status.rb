@@ -49,7 +49,7 @@ def draw?(board)
   end
 end
 
-def over(board) 
+def over(board)
   if won?(board) == true || draw?(board) == true || full?(board) == true
     return true
   else
@@ -60,7 +60,7 @@ end
 
 def winner(board)
   if win? == true
-    return #character of winner 
+    return #character of winner
   else
     return nil
   end
