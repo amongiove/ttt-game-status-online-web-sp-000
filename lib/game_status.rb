@@ -65,7 +65,7 @@ def winner(board)
     O_count = 0
 
     if board.detect{|index| index."X"}
-      X_conut += 1
+      X_count += 1
     elsif board.detect{|index| index."O"}
       O_count += 1
     end
